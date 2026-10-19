@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Peak Fitness | Gym in Sector 45, Gurugram</title>
+    <meta name="description"
+        content="Gym in Sector 45, Gurugram. Strength, cardio, CrossFit and yoga with certified trainers. Book your free trial today.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="nav">
+        <div class="logo">IRON<span>PEAK</span></div>
+        <nav>
+            <a href="#plans">Plans</a>
+            <a href="#classes">Classes</a>
+            <a href="#trial" class="nav-btn">Free Trial</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <p class="tag">Sector 45 · Gurugram · Open 5am – 11pm</p>
+        <h1>NO EXCUSES.<br><span>JUST RESULTS.</span></h1>
+        <p class="sub">Modern equipment, certified trainers and a community that pushes you further.</p>
+        <a href="#trial" class="btn">Book a Free Trial</a>
+    </section>
+
+    <!-- Quick numbers that build trust -->
+    <section class="stats">
+        <div><strong>800+</strong><span>Members</span></div>
+        <div><strong>12</strong><span>Certified Trainers</span></div>
+        <div><strong>40+</strong><span>Classes / Week</span></div>
+        <div><strong>4.8★</strong><span>Google Rating</span></div>
+    </section>
+
+    <!-- Membership plans with Monthly / Yearly switch -->
+    <section id="plans" class="section">
+        <h2>Membership Plans</h2>
+        <div class="toggle">
+            <button class="toggle-btn active" data-period="monthly">Monthly</button>
+            <button class="toggle-btn" data-period="yearly">Yearly <small>Save 25%</small></button>
+        </div>
+        <div class="plans" id="planGrid"></div>
+    </section>
+
+    <!-- Class timetable with day tabs -->
+    <section id="classes" class="section">
+        <h2>Class Timetable</h2>
+        <div class="days" id="dayTabs"></div>
+        <div id="classList"></div>
+    </section>
+
+    <!-- Trainers -->
+    <section class="section">
+        <h2>Meet the Trainers</h2>
+        <div class="trainers" id="trainerGrid"></div>
+    </section>
+
+    <!-- BMI calculator -->
+    <section class="section bmi">
+        <h2>Check Your BMI</h2>
+        <div class="bmi-box">
+            <input type="number" id="height" placeholder="Height (cm)">
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <button class="btn" id="bmiBtn">Calculate</button>
+        </div>
+        <p id="bmiResult"></p>
+    </section>
+
+    <!-- Free trial form -->
+    <section id="trial" class="section">
+        <h2>Book Your Free Trial</h2>
+        <p class="center muted">Your first session is on us. No commitment.</p>
+        <form id="trialForm">
+            <input type="text" id="tName" placeholder="Your name" required>
+            <input type="tel" id="tPhone" placeholder="Phone number" required>
+            <select id="tGoal" required>
+                <option value="">Your goal</option>
+                <option>Lose weight</option>
+                <option>Build muscle</option>
+                <option>Get fit & active</option>
+                <option>Train for a sport</option>
+            </select>
+            <select id="tTime" required>
+                <option value="">Preferred time</option>
+                <option>Morning (5am – 10am)</option>
+                <option>Afternoon (12pm – 4pm)</option>
+                <option>Evening (5pm – 11pm)</option>
+            </select>
+            <button type="submit" class="btn">Claim Free Trial</button>
+        </form>
+        <p id="trialMsg"></p>
+    </section>
+
+    <a class="whatsapp" href="https://wa.me/919999999999" target="_blank">💬 WhatsApp</a>
+
+    <footer>© 2026 Iron Peak Fitness · Sector 45, Gurugram · Website by Ikansh</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
